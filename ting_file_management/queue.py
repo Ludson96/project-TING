@@ -8,8 +8,8 @@ class Queue(AbstractQueue):
     def __len__(self) -> int:
         return len(self._items)
 
-    def enqueue(self, value: int) -> None:
-        if not isinstance(value, int):
+    def enqueue(self, value: dict) -> None:
+        if not isinstance(value, dict):
             raise TypeError("O valor deve ser um inteiro.")
         self._items.append(value)
 
