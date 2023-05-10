@@ -3,7 +3,8 @@ def exists_word(word, instance):
         return None
 
     result = []
-    for item in instance._items:
+    for index in range(len(instance)):
+        item = instance.search(index)
         ocorrencias = [
             {"linha": linha + 1}
             for linha, conteudo in enumerate(item["linhas_do_arquivo"])
@@ -27,7 +28,8 @@ def search_by_word(word, instance):
         return None
 
     result = []
-    for item in instance._items:
+    for index in range(len(instance)):
+        item = instance.search(index)
         ocorrencias = [
             {
                 "linha": linha + 1,
