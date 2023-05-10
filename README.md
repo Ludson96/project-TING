@@ -27,7 +27,7 @@ Ele possui dois módulos:
 
 ## Habilidades trabalhadas
 
-- Manipular Filhas;
+- Manipular Filas;
 - Manipular Deque;
 - Manipular Nó & Listas Ligadas e;
 - Manipular Listas Duplamente Ligadas.
